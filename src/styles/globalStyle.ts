@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle<{ theme?: DefaultTheme }>`
         padding: 0;
         margin: 0;
     }
-    h1, h2, p, ul, li {
+    figure, h1, h2, p, ul, li {
         padding: 0;
         margin: 0;
     }
