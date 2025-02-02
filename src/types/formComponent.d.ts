@@ -3,7 +3,7 @@ export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export type MessageProps = {
   msg: string
-  type: 'error' | 'success'
+  type: 'success' | 'error'
 }
 
 export interface FormComponentProps {
