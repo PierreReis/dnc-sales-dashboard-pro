@@ -99,7 +99,7 @@ function Login() {
                   {
                     className: 'primary',
                     disabled: !formValid || loading,
-                    typeof: 'submit',
+                    type: 'submit',
                     onClick: handleSubmit,
                     children: loading ? 'Aguarde...' : 'Login',
                   },
