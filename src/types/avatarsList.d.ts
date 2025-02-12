@@ -1,5 +1,5 @@
 export type ListDataProps = {
-  avatar: string
+  avatar?: string
   name: string
   subtitle: string
 }
