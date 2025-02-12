@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import { Logo } from '@/components'
-import { Avatar, Container, Box } from '@mui/material'
+import Avatar from '@mui/material/Avatar'
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
 import { pxToRem } from '@/utils'
 
 const StyledHeader = styled.header`
