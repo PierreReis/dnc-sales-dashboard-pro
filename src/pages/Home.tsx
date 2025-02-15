@@ -62,6 +62,7 @@ function Home() {
             <>
               <Grid item xs={12} md={4}>
                 <CardComponent
+                  id="total-sales"
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -83,6 +84,7 @@ function Home() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <CardComponent
+                  id="month-goals"
                   className={
                     highlightsData
                       ? highlightsData[1].subtitle
@@ -111,6 +113,7 @@ function Home() {
               </Grid>
               <Grid item xs={12} md={4}>
                 <CardComponent
+                  id="total-leads"
                   className={
                     highlightsLoading
                       ? 'skeleton-loading skeleton-loading-mh-1'
@@ -133,6 +136,7 @@ function Home() {
           <Grid item xs={12} md={7}>
             {!salesMonthError && (
               <CardComponent
+                id="month-sales-chart"
                 className={
                   salesMonthLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -155,6 +159,7 @@ function Home() {
           <Grid item xs={12} md={5}>
             {!salesStarsError && (
               <CardComponent
+                id="sales-stars"
                 className={
                   salesStarsLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -181,6 +186,7 @@ function Home() {
           <Grid item xs={12} md={5}>
             {!newsError && (
               <CardComponent
+                id="news"
                 className={
                   newsLoading ? 'skeleton-loading skeleton-loading-mh-2' : ''
                 }
@@ -211,6 +217,7 @@ function Home() {
           <Grid item xs={12} md={7}>
             {!salesYearError && (
               <CardComponent
+                id="year-sales-chart"
                 className={
                   salesYearLoading
                     ? 'skeleton-loading skeleton-loading-mh-2'
@@ -220,7 +227,7 @@ function Home() {
                 {!salesYearLoading && salesYearData && (
                   <>
                     <StyledH2 className="mb-1">
-                      Valor de vendas por mês
+                      Valor de vendas por ano
                     </StyledH2>
                     <CustomChart
                       labels={salesYearData.labels.map((label) => label)}
